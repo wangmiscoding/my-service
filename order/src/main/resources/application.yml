@@ -1,0 +1,23 @@
+server:
+  port: 9855
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/flowable?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&useAffectedRows=true
+    username: root
+    password: root
+
+mybatis-plus:
+  configuration:
+    # 开启驼峰命名方式 user_name 自动转成 java 实体类中的 userName
+    map-underscore-to-camel-case: true
+    default-executor-type: reuse
+    local-cache-scope: statement
+  lazy-initialization: true
+  global-config:
+    db-config:
+      id-type: auto
+logging:
+  level:
+    web: debug
+    org.flowable: debug
