@@ -3,9 +3,17 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/my_db?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&useAffectedRows=true
+    url: jdbc:mysql://localhost:3306/flowable?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&useAffectedRows=true
     username: root
     password: root
+  
+# Flowable配置
+flowable:
+  process-definition-location-prefix: classpath*:/processes/
+  check-process-definitions: true
+  database-schema-update: true
+  rest-api-enabled: true
+
 
 mybatis-plus:
   configuration:

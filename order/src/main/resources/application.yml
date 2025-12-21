@@ -20,4 +20,3 @@ mybatis-plus:
 logging:
   level:
     web: debug
-    org.flowable: debug
