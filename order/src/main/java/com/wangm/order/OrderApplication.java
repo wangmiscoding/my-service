@@ -12,7 +12,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @MapperScan("com.wangm.order.mapper")
 @SpringBootApplication
-@MapperScan("com.wangm.order.mapper")
 public class OrderApplication {
 
     public static void main(String[] args) {

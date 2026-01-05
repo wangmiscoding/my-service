@@ -43,12 +43,7 @@
             <artifactId>flowable-spring-boot-starter</artifactId>
             <version>${flowable.version}</version>
         </dependency>
-        <!-- Flowable REST API -->
-        <dependency>
-            <groupId>org.flowable</groupId>
-            <artifactId>flowable-rest</artifactId>
-            <version>${flowable.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
